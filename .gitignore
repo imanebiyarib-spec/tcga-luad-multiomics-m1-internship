@@ -1,0 +1,18 @@
+# macOS system files
+.DS_Store
+**/.DS_Store
+
+# Ignore raw data matrices and heavy objects
+Data/TCGA_counts/
+Data/CNA_segment/
+Data/CNV/
+Data/ChIPseq/
+Data/Labels/
+Data/MAF/*.rds
+
+# Keep lightweight metadata and manifests to allow reproducibility
+!Data/Manifests/
+!Data/Metadata_Clinical/
+
+# Ignore generated results to save space
+Results/
